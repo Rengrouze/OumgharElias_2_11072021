@@ -1,0 +1,261 @@
+/* Load fonts */
+@font-face {
+    font-family: 'Raleway';
+    src: url('Police/Raleway/Raleway-Thin.eot');
+    src: url('Police/Raleway/Raleway-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Police/Raleway/Raleway-Thin.woff2') format('woff2'),
+        url('Police/Raleway/Raleway-Thin.woff') format('woff'),
+        url('Police/Raleway/Raleway-Thin.ttf') format('truetype'),
+        url('Police/Raleway/Raleway-Thin.svg#Raleway-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Police/Raleway/Raleway-ThinItalic.eot');
+    src: url('Police/Raleway/Raleway-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Police/Raleway/Raleway-ThinItalic.woff2') format('woff2'),
+        url('Police/Raleway/Raleway-ThinItalic.woff') format('woff'),
+        url('Police/Raleway/Raleway-ThinItalic.ttf') format('truetype'),
+        url('Police/Raleway/Raleway-ThinItalic.svg#Raleway-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('Police/Raleway/Raleway-Bold.eot');
+    src: url('Police/Raleway/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Police/Raleway/Raleway-Bold.woff2') format('woff2'),
+        url('Police/Raleway/Raleway-Bold.woff') format('woff'),
+        url('Police/Raleway/Raleway-Bold.ttf') format('truetype'),
+        url('Police/Raleway/Raleway-Bold.svg#Raleway-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('Police/Raleway/Raleway-SemiBold.eot');
+    src: url('Police/Raleway/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Police/Raleway/Raleway-SemiBold.woff2') format('woff2'),
+        url('Police/Raleway/Raleway-SemiBold.woff') format('woff'),
+        url('Police/Raleway/Raleway-SemiBold.ttf') format('truetype'),
+        url('Police/Raleway/Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+*
+{
+    font-family: 'Raleway', Arial, 'Times New Roman', Times, serif;
+}
+/*text Format*/
+h2
+{
+    font-size: 1.4em;
+    font-weight:bold;
+}
+p
+{
+    font-weight: 600;
+    display: block;
+}
+i /*icons Format */
+{
+    font-size: 1.4em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* links format*/
+a
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+a:visited
+{
+    text-decoration: none;
+}
+
+/* page centering  */
+
+#bloc-page
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+
+/* Head includes the logo, the search bar, the filters and the small paragraph on the number of accommodations */
+#head
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+/* Box of the logo and the navigation*/
+#Top
+{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: bottom;
+}
+
+nav
+{
+    display: flex;
+    width: 27%;
+    justify-content: space-around;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #0065FC;
+    font-weight: 600;
+}
+.T_box       /* Navigation box*/
+{
+    padding-top: 3%;
+    color: #0065FC;
+    text-align: center;
+    border-top: solid white 3px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.T_box:hover
+{
+    border-top: solid #0065FC 3px;
+}
+
+
+#Searchbar  /* literally the Search bar */
+{
+    justify-content: flex-start;
+    width: 425px;
+    height: 40px;
+    display: flex;
+    vertical-align: middle;
+    border-radius: 8px 8px 8px 8px;
+    overflow: hidden;
+    background-color: #F2F2F2;
+}
+input  /*format inside the form*/
+{
+    font-weight: 600;
+    font-size: 1.2em;
+    height: 35px;
+    box-sizing: border-box;
+}
+#Search  /* Where you can write*/
+{
+    width: 60%;
+    border: solid #F2F2F2 0.5px;
+    height: 100%;
+}
+#Click_Search /* Search button */
+{ 
+    width: 30%;
+    height: 100%;
+    background-color: #0065FC;
+    color: white;
+    border-color:#0065FC  ;
+    border-style: none;
+    
+}
+#SP_1 /* Box of the pin icon */
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #F2F2F2;
+    width: 10%;
+    text-align: center;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+}
+#Filters
+{
+    display: flex;
+    height: 49px;
+    vertical-align: middle;
+    font-size: 1.1em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+#FP_box
+{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: middle;
+}
+ul
+{
+    display: flex;
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+}
+.F_box
+{
+    display: flex;
+    vertical-align: middle;
+    margin-top: 0px;
+    width: 100%;
+    height: 45px;
+}
+.FT_box
+{
+    height: 100%;
+    margin-left: 5%;
+    display: flex;
+}
+.I_box
+{   
+    height: 100%;
+    padding-top: auto;
+    padding-bottom: auto;
+    display: flex;
+    justify-content: center;
+    width: 45px;
+    background-color: #DEEBFF;
+    border-radius: 50px;
+    border: solid 0.5px #DEEBFF;
+    overflow:hidden;
+    color: #0065FC;
+}
+
+/*List format*/
+li
+{
+    list-style: none;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    border: solid #F2F2F2 2px;
+    border-radius: 50px;
+
+}
+.fas:not(#H_footer)
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.FText
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
