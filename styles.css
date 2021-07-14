@@ -40,10 +40,10 @@
     font-family: 'Raleway';
     src: url('Police/Raleway/Raleway-SemiBold.eot');
     src: url('Police/Raleway/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('Police/Raleway/Raleway-SemiBold.woff2') format('woff2'),
-        url('Police/Raleway/Raleway-SemiBold.woff') format('woff'),
-        url('Police/Raleway/Raleway-SemiBold.ttf') format('truetype'),
-        url('Police/Raleway/Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
+    url('Police/Raleway/Raleway-SemiBold.woff2') format('woff2'),
+    url('Police/Raleway/Raleway-SemiBold.woff') format('woff'),
+    url('Police/Raleway/Raleway-SemiBold.ttf') format('truetype'),
+    url('Police/Raleway/Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -66,7 +66,7 @@ p
     font-weight: 600;
     display: block;
 }
-i /*icons Format */
+i :not(#H_footer_icon) /*icons Format */
 {
     font-size: 1.4em;
     margin-top: auto;
@@ -83,17 +83,25 @@ a:visited
 {
     text-decoration: none;
 }
+.BlueStar
+{
+    color: #0065FC;
+}
+.GreyStar
+{
+    color: #d9d9d9;
+}
 
 /* page centering  */
 
-#bloc-page
+#bloc-page:not(#True_Footer)
 {
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 1440px;
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 1880
 }
 
 
@@ -103,6 +111,7 @@ a:visited
     display: flex;
     flex-direction: column;
     margin-top: 3%;
+    height: 30%;
 }
 
 /* Box of the logo and the navigation*/
@@ -137,7 +146,10 @@ nav
     border-top: solid #0065FC 3px;
 }
 
-
+#Bloc_Search
+{
+    width: 100%;
+}
 #Searchbar  /* literally the Search bar */
 {
     justify-content: flex-start;
@@ -183,7 +195,7 @@ input  /*format inside the form*/
     vertical-align: middle;
     justify-content: center;
 }
-#Filters
+#Filters_bar
 {
     display: flex;
     height: 49px;
@@ -193,6 +205,14 @@ input  /*format inside the form*/
     margin-bottom: 2%;
     width: 100%;
 }
+#Filters
+{
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 2%;
+}
 #FP_box
 {
     text-align: center;
@@ -200,14 +220,7 @@ input  /*format inside the form*/
     margin-bottom: auto;
     vertical-align: middle;
 }
-ul
-{
-    display: flex;
-    margin: 0%;
-    height: 100%;
-    width: 100%;
-    justify-content: flex-start;
-}
+
 .F_box
 {
     display: flex;
@@ -215,6 +228,11 @@ ul
     margin-top: 0px;
     width: 100%;
     height: 45px;
+    border: solid #F2F2F2 2.5px;
+    border-radius: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
+    
 }
 .FT_box
 {
@@ -237,25 +255,330 @@ ul
     color: #0065FC;
 }
 
-/*List format*/
-li
-{
-    list-style: none;
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-    border: solid #F2F2F2 2px;
-    border-radius: 50px;
-
-}
-.fas:not(#H_footer)
+.fas:not(#H_footer_icon)
 {
     margin-top: auto;
     margin-bottom: auto;
+}
+
+#H_Footer
+{
+    display: flex;
+    height: 50%;
+}
+#H_Footer_IconFrame
+{
+    display: flex;
+    border: solid #F2F2F2 2px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    
+}
+
+#H_footer_icon
+{
+    
+    font-size: 1.4em;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #0065FC;
+    
 }
 .FText
 {
     margin-top: auto;
     margin-bottom: auto;
+}
+
+/* End of the Header */
+
+
+
+
+/* Corpus */
+
+#corpus
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 1280px;
+}
+
+/* First article */
+
+#inn_n_popular
+{
+    width: 100%;
+    display: flex;
+    height: 50%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+/*Title and board */
+#inn
+{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    width: 882px;
+    background-color:#F2F2F2 ;
+    border-radius: 20px;
+    height: 620px;
+    margin-right: 1%;
+}
+
+#H_Inn
+{
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%
+}
+
+/*board*/
+
+#Inn_board 
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 880px;
+    height: 626px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.I_Inn_Frame
+{
+    background-color: white;
+    width: 246px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0.7%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 1px 1px #dfdfdf ;
+    
+}
+
+.I_Inn
+{
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+    height: 112px;
+    width: 235px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.Inn_Text p:not(.Inn_note)
+{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 3%;
+}
+.Inn_Text h4
+{
+    margin-top: 1.5%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+    margin-right: auto;
+}
+.Inn_note
+{
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+#More
+{
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-size: 1.3em;
+}
+#Popular
+ {
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+        height: 626px;
+        background-color:#F2F2F2 ;
+        border-radius: 20px;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin-left: 1%;
+        height: 100%;
+        padding-bottom: 5px;
+}
+#Popular_Board
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.I_Popular_Frame
+{
+    background-color: white;
+    width: 344px;
+    height: 144px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0.7%;
+    display: flex;
+    box-shadow: 0px 1px 1px 1px #dfdfdf ;
+}
+.I_Popular
+{
+    object-fit: cover;
+    width: 127px;
+    height: 134px;
+    border-radius: 10px 0px 0px 10px;
+    margin : 5px;
+}
+
+#H_Popular
+{
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-right: 1%;
+    display:flex;
+    justify-content: space-between;
+}
+.Popular_Text
+{
+    text-align: left;
+    margin-left: 2%;
+}
+
+
+#activity
+{
+   width: 1335px; 
+   height: 502px;
+   margin-left: auto;
+   margin-right: auto;
+}
+#Activity_Board
+{
+    height: 445px;
+    width: 1335px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.I_Activity_Frame1
+{
+    width: 302px;
+    height: 445px;
+    box-shadow: 0px 1px 1px 1px #dfdfdf; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+.I_Activity1
+{
+    width: 302px;
+    height: 388px;
+    object-fit: cover;
+}
+.I_Activity_Frame2
+{
+    height: 236px;
+    width: 302px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px 1px #dfdfdf; 
+    overflow: hidden;
+}
+
+.I_Activity2
+{
+    width: 302px;
+    height: 180px;
+    object-fit: cover;
+}
+.I_Activity_Frame3
+{
+    height: 164px;
+    width: 302px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px 1px #dfdfdf; 
+    overflow: hidden;
+}
+.I_Activity3
+{
+    width: 302px;
+    height: 109px;
+    object-fit: cover;
+}
+.I_Activity_Frame4
+{
+    height: 194px;
+    width: 302px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px 1px #dfdfdf; 
+    overflow: hidden;
+}
+.I_Activity4
+{
+    width: 302px;
+    height: 140px;
+    object-fit: cover;
+}
+.I_Activity_Frame5
+{
+    height: 209px;
+    width: 302px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px 1px #dfdfdf; 
+    overflow: hidden;
+}
+.I_Activity5
+{
+    width: 302px;
+    height: 153px;
+    object-fit: cover;
+}
+.I_Activity_Frame1 h4, .I_Activity_Frame2 h4, .I_Activity_Frame3 h4, .I_Activity_Frame4 h4, .I_Activity_Frame5 h4
+{
+    margin-left: 5%;
+}
+
+#True_Footer
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dfdfdf;
+    display: flex;
+    justify-content: space-around;
+}
+
+h5
+{
+    font-size: 1.2em;
+}
+ul
+{
+    padding: 0%;
+}
+li
+{
+    list-style: none;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-top: 9%;
+    margin-bottom: 9%;
 }
