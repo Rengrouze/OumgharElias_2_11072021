@@ -93,15 +93,19 @@ a:visited
 }
 
 /* page centering  */
+body
+{
+    margin: 0%;
+    width: 100%;
+}
 
-#bloc-page:not(#True_Footer)
+#bloc-page
 {
     margin-left: auto;
     margin-right: auto;
-    width: 1440px;
+    width: 1340px;
     display: flex;
     flex-direction: column;
-    height: 1880
 }
 
 
@@ -111,7 +115,6 @@ a:visited
     display: flex;
     flex-direction: column;
     margin-top: 3%;
-    height: 30%;
 }
 
 /* Box of the logo and the navigation*/
@@ -226,13 +229,19 @@ input  /*format inside the form*/
     display: flex;
     vertical-align: middle;
     margin-top: 0px;
-    width: 100%;
+    width: 20%;
     height: 45px;
     border: solid #F2F2F2 2.5px;
     border-radius: 50px;
     margin-left: 2%;
     margin-right: 2%;
+    align-items: flex-end;
     
+}
+.F_box:hover
+{
+    background-color: #0065FC;
+    color: white;
 }
 .FT_box
 {
@@ -346,11 +355,11 @@ input  /*format inside the form*/
 {
     display: flex;
     flex-wrap: wrap;
-    width: 880px;
+    width: 800px;
     height: 626px;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 40px;
 
 }
 
@@ -361,11 +370,15 @@ input  /*format inside the form*/
     height: 200px;
     border-radius: 10px;
     overflow: hidden;
-    padding: 0.7%;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 1px 1px 1px #dfdfdf ;
+    border: solid 2px white
     
+}
+.I_Inn_Frame:hover
+{
+    border: solid 2px #0065FC;
 }
 
 .I_Inn
@@ -393,16 +406,26 @@ input  /*format inside the form*/
 }
 .Inn_note
 {
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 3%;
 }
 
 #More
 {
     margin-left: 5%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     font-size: 1.3em;
 }
+#More:hover
+{
+    color: #0065FC;
+    text-decoration: underline;
+}
+
+
+
+
+
 #Popular
  {
         display: flex;
@@ -438,6 +461,11 @@ input  /*format inside the form*/
     padding: 0.7%;
     display: flex;
     box-shadow: 0px 1px 1px 1px #dfdfdf ;
+    border: solid 2px white
+}
+.I_Popular_Frame:hover
+{
+    border: solid 2px #0065FC;
 }
 .I_Popular
 {
@@ -464,6 +492,12 @@ input  /*format inside the form*/
 }
 
 
+
+
+
+
+
+
 #activity
 {
    width: 1335px; 
@@ -488,12 +522,18 @@ input  /*format inside the form*/
     border-radius: 10px;
     overflow: hidden;
 }
+.I_Activity_Frame1:hover
+{
+    background-color: #0065FC;
+    color: white;
+}
 .I_Activity1
 {
     width: 302px;
     height: 388px;
     object-fit: cover;
 }
+
 .I_Activity_Frame2
 {
     height: 236px;
@@ -501,6 +541,11 @@ input  /*format inside the form*/
     border-radius: 10px;
     box-shadow: 0px 1px 1px 1px #dfdfdf; 
     overflow: hidden;
+}
+.I_Activity_Frame2:hover
+{
+    background-color: #0065FC;
+    color: white;
 }
 
 .I_Activity2
@@ -517,6 +562,11 @@ input  /*format inside the form*/
     box-shadow: 0px 1px 1px 1px #dfdfdf; 
     overflow: hidden;
 }
+.I_Activity_Frame3:hover
+{
+    background-color: #0065FC;
+    color: white;  
+}
 .I_Activity3
 {
     width: 302px;
@@ -531,6 +581,11 @@ input  /*format inside the form*/
     box-shadow: 0px 1px 1px 1px #dfdfdf; 
     overflow: hidden;
 }
+.I_Activity_Frame4:hover
+{
+    background-color: #0065FC;
+    color: white;  
+}
 .I_Activity4
 {
     width: 302px;
@@ -544,6 +599,11 @@ input  /*format inside the form*/
     border-radius: 10px;
     box-shadow: 0px 1px 1px 1px #dfdfdf; 
     overflow: hidden;
+}
+.I_Activity_Frame5:hover
+{
+    background-color: #0065FC;
+    color: white;  
 }
 .I_Activity5
 {
@@ -566,6 +626,10 @@ input  /*format inside the form*/
     justify-content: space-around;
 }
 
+li:hover
+{
+    text-decoration: underline;
+}
 h5
 {
     font-size: 1.2em;
