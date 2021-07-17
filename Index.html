@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 425px)" href="Styles2.css" />
     <link rel="shorcut icon" type="image/x-icon" href="images/logo/Reservia 2.svg" />
     <title>Reservia</title>
     <script src="https://kit.fontawesome.com/53a23bf523.js" crossorigin="anonymous"></script>
@@ -15,15 +16,15 @@
        <div id=head>
 
            <header id="Top">
-               <a href="Index.html"><img src="images/logo/Reservia.svg" alt="Reservia_logo"></a>
+               <a href="Index.html" id="logo"><img src="images/logo/Reservia.svg" alt="Reservia_logo"></a>
                <nav>
                    <a href="#inn" class="T_box Inn_button">Hébergements</a>
                    <a href="#activity" class="T_box Act_button">Activités</a>
-                   <a href="#" class="T_box Signup">S'incrire</a>
+                   <a href="#" class="T_box Signup">S'inscrire</a>
                 </nav>
            </header>
 
-           <section>
+           <section id="Catchphrase">
                <h2>Trouvez votre Hébergement pour des vacances de rêve</h2>
                <p>En plein centre ville ou en pleine nature</p>
            </section>
@@ -32,46 +33,52 @@
             
                 <form method="GET" action="#" >
                     <div id="Searchbar">
-                        <div id="SP_1"><label for="Search" id="SearchPin" ><i class="fas fa-map-marker-alt" ></i></label></div>
+                        <button id="SP_1"><i class="fas fa-map-marker-alt" ></i></button>
                         <input type="text" name="Search" id="Search" placeholder="Paris, Marseille..."/>
                         <input type="submit" id="Click_Search" value="Rechercher">
+                        <div id="Searchpinbox">
+                            <button type="submit" id="Click_Search2">
+                            <i class="fas fa-search"></i>
+                            </button>
+
+                        </div>
                     </div>
                 </form>
             <div id="Filters_bar">
                 <p id="FP_box">Filtres</p>
                     <div id="Filters">
-                            <a href="#" class="F_box">
+                            <button type="button" class="F_box">
                                 <div class="I_box">
                                     <i class="fas fa-money-bill-wave"></i>
                                 </div>
                                 <div class="FT_box">
                                     <p class="FText">Économique</p>  
                                 </div>
-                            </a>
-                            <a href="#" class="F_box">
+                            </button>
+                            <button type="button" class="F_box">
                                 <div class="I_box">
                                     <i class="fas fa-child"></i>    
                                 </div>
                                 <div class="FT_box">
                                     <p class="FText">Familial</p>
                                 </div>
-                            </a>
-                            <a href="#" class="F_box">
+                            </button>
+                            <button type="button" class="F_box">
                                 <div class="I_box">
                                     <i class="fas fa-heart"></i>   
                                 </div>
                                 <div class="FT_box">
                                     <p class="FText">Romantique</p>
                                 </div>
-                            </a>
-                            <a href="#" class="F_box">
+                            </button>
+                            <button type="button" class="F_box">
                                 <div class="I_box">
                                     <i class="fas fa-dog"></i>    
                                 </div>
                                 <div class="FT_box">
                                     <p class="FText">Animaux autorisés</p>
                                 </div>
-                            </a>
+                            </button>
                       </div>
                 </div>
             </div>
@@ -242,28 +249,28 @@
                         <h2>Activités à Marseille</h2>
                     </header>
                    <div id="Activity_Board">
-                        <a href="#" class="I_Activity_Frame1">
-                            <img src="images/activites/4_small/Vieux_Port_4.jpg" alt="Vieux Port Marseille" class="I_Activity1">
+                        <a href="#" class="I_Activity_Frame I_Activity_Frame1">
+                            <img src="images/activites/4_small/Vieux_Port_4.jpg" alt="Vieux Port Marseille" class="I_Activity I_Activity1">
                             <h4>Vieux Port</h4>
                         </a>
-                        <a href="#" class="I_Activity_Frame2">
-                            <img src="images/activites/4_small/Pomègues_4.jpg" alt="Fort de Pomègues" class="I_Activity2">
+                        <a href="#" class="I_Activity_Frame I_Activity_Frame2">
+                            <img src="images/activites/4_small/Pomègues_4.jpg" alt="Fort de Pomègues" class="I_Activity I_Activity2">
                             <h4>Fort de Pomègues</h4>
                         </a>
-                        <a href="#" class="I_Activity_Frame3">
-                            <img src="images/activites/4_small/Îles_du_Frioul_4.jpg" alt="Îles du Frioul" class="I_Activity3">
+                        <a href="#" class="I_Activity_Frame I_Activity_Frame3">
+                            <img src="images/activites/4_small/Îles_du_Frioul_4.jpg" alt="Îles du Frioul" class="I_Activity I_Activity3">
                             <h4>Îles du Frioul</h4>
                         </a>
-                        <a href="#" class="I_Activity_Frame1">
-                            <img src="images/activites/4_small/Les_Calanques_4.jpg" alt="Parc National des Calanques" class="I_Activity1">
+                        <a href="#" class="I_Activity_Frame I_Activity_Frame I_Activity_Frame1">
+                            <img src="images/activites/4_small/Les_Calanques_4.jpg" alt="Parc National des Calanques" class="I_Activity I_Activity1">
                             <h4>Parc National des Calanques</h4>
                         </a>
-                        <a href="#" class="I_Activity_Frame4">
-                            <img src="images/activites/4_small/Notre_Dame_de_la_Garde_4.jpg" alt="Notre-Dame-de-la-Garde" class="I_Activity4">
+                        <a href="#" class="I_Activity_Frame I_Activity_Frame4">
+                            <img src="images/activites/4_small/Notre_Dame_de_la_Garde_4.jpg" alt="Notre-Dame-de-la-Garde" class="I_Activity I_Activity4">
                             <h4>Notre-Dame-de-la-Garde</h4>
                         </a>
-                        <a href="#" class="I_Activity_Frame5">
-                            <img src="images/activites/4_small/Parc_Longchamp_4.jpg" alt="Parc Longchamp" class="I_Activity5">
+                        <a href="#" class="I_Activity_Frame I_Activity_Frame5">
+                            <img src="images/activites/4_small/Parc_Longchamp_4.jpg" alt="Parc Longchamp" class="I_Activity I_Activity5">
                             <h4>Parc Longchamp</h4>
                         </a>
                    </div>

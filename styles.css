@@ -98,7 +98,10 @@ body
     margin: 0%;
     width: 100%;
 }
-
+#Searchpinbox
+{
+    display: none;
+}
 #bloc-page
 {
     margin-left: auto;
@@ -160,21 +163,25 @@ nav
     height: 40px;
     display: flex;
     vertical-align: middle;
-    border-radius: 8px 8px 8px 8px;
+    border-radius: 10px 10px 10px 10px;
     overflow: hidden;
     background-color: #F2F2F2;
+    border: solid 1px #F2F2F2;
 }
-input  /*format inside the form*/
+#Searchbar input  /*format inside the form*/
 {
     font-weight: 600;
     font-size: 1.2em;
-    height: 35px;
+    height: 40px;
     box-sizing: border-box;
 }
 #Search  /* Where you can write*/
 {
     width: 60%;
-    border: solid #F2F2F2 0.5px;
+    border-top: solid #F2F2F2 0.5px;
+    border-bottom: solid #F2F2F2 0.5px;
+    border-left: solid #F2F2F2 0.5px;
+    border-right: none;
     height: 100%;
 }
 #Click_Search /* Search button */
@@ -189,8 +196,7 @@ input  /*format inside the form*/
 }
 #SP_1 /* Box of the pin icon */
 {
-    margin-top: auto;
-    margin-bottom: auto;
+    border: none;
     background-color: #F2F2F2;
     width: 10%;
     text-align: center;
@@ -198,10 +204,13 @@ input  /*format inside the form*/
     vertical-align: middle;
     justify-content: center;
 }
+.fa-map-marker-alt
+{
+    font-size: 1.3em;
+}
 #Filters_bar
 {
     display: flex;
-    height: 49px;
     vertical-align: middle;
     font-size: 1.1em;
     margin-top: 2%;
@@ -212,7 +221,6 @@ input  /*format inside the form*/
 {
     font-weight: 600;
     display: flex;
-    justify-content: space-between;
     width: 100%;
     margin-left: 2%;
 }
@@ -227,15 +235,16 @@ input  /*format inside the form*/
 .F_box
 {
     display: flex;
-    vertical-align: middle;
     margin-top: 0px;
-    width: 20%;
-    height: 45px;
-    border: solid #F2F2F2 2.5px;
+    height: 47px;
+    border: solid #F2F2F2 2px;
     border-radius: 50px;
     margin-left: 2%;
     margin-right: 2%;
-    align-items: flex-end;
+    background-color: white;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
     
 }
 .F_box:hover
@@ -249,19 +258,23 @@ input  /*format inside the form*/
     margin-left: 5%;
     display: flex;
 }
+.FText
+{
+    margin-right: 20px;
+    font-size: 1.2em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .I_box
 {   
-    height: 100%;
-    padding-top: auto;
-    padding-bottom: auto;
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
-    width: 45px;
     background-color: #DEEBFF;
-    border-radius: 50px;
-    border: solid 0.5px #DEEBFF;
-    overflow:hidden;
     color: #0065FC;
+    font-size: 1.3em;
 }
 
 .fas:not(#H_footer_icon)
@@ -297,11 +310,6 @@ input  /*format inside the form*/
     color: #0065FC;
     
 }
-.FText
-{
-    margin-top: auto;
-    margin-bottom: auto;
-}
 
 /* End of the Header */
 
@@ -324,7 +332,6 @@ input  /*format inside the form*/
 {
     width: 100%;
     display: flex;
-    height: 50%;
     margin-top: 2%;
     margin-bottom: 3%;
 }
@@ -458,7 +465,6 @@ input  /*format inside the form*/
     margin-right: auto;
     border-radius: 10px;
     overflow: hidden;
-    padding: 0.7%;
     display: flex;
     box-shadow: 0px 1px 1px 1px #dfdfdf ;
     border: solid 2px white
