@@ -1,0 +1,235 @@
+body
+{
+    height: auto;
+}
+#bloc-page
+{
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+#Top
+{
+    flex-direction: column;
+    width: 100%;
+
+}
+#logo
+{
+    margin-left: 4%;
+}
+nav
+{
+    width: 100%;
+    margin-top: 2%;
+}
+.Signup
+{
+    position: absolute;
+    top:-1px;
+    right: 2px;
+    margin-right: 50px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+.Inn_button,.Act_button
+{  
+    border-bottom: solid 2px #b2b2b2;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 15px;
+    width: 50%;
+    font-size: 0.8em;
+}
+.Inn_button:hover,.Act_button:hover
+{  
+    border-bottom: solid 2px #0065FC;
+    border-top: solid 2px  white;
+}
+#Catchphrase
+{
+    font-size: 0.8em;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#Bloc_Search
+{
+    width: 100%;
+}
+#Searchbar
+{
+    width:335px;
+    margin-left: 21px;
+    margin-right: 21px;
+    height: 51px;
+}
+#Searchbar input
+{
+    height: 51px;
+} 
+#Search
+{
+    height: 51px;
+    width: 230px;
+}
+#SP_1
+{
+    width: 52px;
+    height: 51px;
+}
+#Click_Search
+{
+    display: none;
+} 
+#Click_Search2
+{
+    position: relative;
+    width: 51px;
+    height: 51px;
+    border: none;
+    background-color: #0065FC;
+    border-radius: 10px 10px 10px 10px;
+}  
+#Searchpinbox
+{
+    display: block;
+    width: 52px;
+    height: 51px;
+}
+.fa-search
+{
+    
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+}
+
+#Filters_bar
+{
+    flex-direction: column;
+    align-items: flex-start;
+}
+#FP_box
+{
+    margin-left: 10px;
+}
+
+#Filters
+{
+    flex-wrap: wrap;
+    height: 180px;
+    margin-top: 10px;
+}
+
+#corpus
+{
+    height: auto;
+    width: 100%;
+}
+#inn_n_popular
+{
+    flex-direction: column-reverse;
+}
+#Popular
+{
+    border-radius: 0%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    height: 581px;
+}
+#H_Popular
+{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.I_Popular_Frame
+{
+    width: 335px;
+    height: 145px;
+}
+
+#inn
+{
+    background-color: white;
+    width: 100%;
+}
+#Inn_board
+{
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    height: auto;
+}
+.I_Inn_Frame
+{
+    width: 325px;
+    height: 217px;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    margin-top: 8.5px;
+    margin-bottom: 8.5px;
+}
+.I_Inn
+{
+    width: 100%;
+    height: 114px;
+    border-radius: 0%;
+    margin: 0px;
+}
+#activity
+{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8%;
+}
+#activity header
+{
+    margin-left: 1%;
+}
+#Activity_Board
+{
+    width: 100%;
+    height:1254px;
+}
+
+.I_Activity_Frame
+{
+    width: 335px;
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.I_Activity
+{
+    height: 135px;
+    width: 100%;
+}
+
+#True_Footer
+{
+    flex-direction: column;
+}
+
+#True_Footer div
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
