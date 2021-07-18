@@ -69,8 +69,6 @@ p
 i :not(#H_footer_icon) /*icons Format */
 {
     font-size: 1.4em;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 /* links format*/
 a
@@ -235,7 +233,6 @@ nav
 .F_box
 {
     display: flex;
-    margin-top: 0px;
     height: 47px;
     border: solid #F2F2F2 2px;
     border-radius: 50px;
@@ -245,6 +242,10 @@ nav
     padding: 0;
     white-space: nowrap;
     overflow: hidden;
+    margin-right: 20px;
+    font-size: 0.8em;
+    font-weight: 600;
+    align-items: center;
     
 }
 .F_box:hover
@@ -252,29 +253,20 @@ nav
     background-color: #0065FC;
     color: white;
 }
-.FT_box
-{
-    height: 100%;
-    margin-left: 5%;
-    display: flex;
-}
-.FText
-{
-    margin-right: 20px;
-    font-size: 1.2em;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.I_box
+
+
+.Ficon
 {   
     height: 45px;
     width: 45px;
     border-radius: 50px;
-    display: flex;
-    justify-content: center;
     background-color: #DEEBFF;
     color: #0065FC;
     font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
 }
 
 .fas:not(#H_footer_icon)
