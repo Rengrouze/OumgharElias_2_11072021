@@ -14,11 +14,11 @@
     <script src="https://kit.fontawesome.com/53a23bf523.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <div id="bloc-page">
+   <div id="bloc-page"> <!--Define the structure of the website-->
 
-       <div id=head>
+       <div id=head> <!--Everything above the Corpus-->
 
-           <header id="Top">
+           <header id="Top"> <!-- Logo and navigation-->
                <a href="Index.html" id="logo"><img src="images/logo/Reservia.svg" alt="Reservia_logo"></a>
                <nav>
                    <a href="#inn" class="T_box Inn_button">Hébergements</a>
@@ -27,48 +27,46 @@
                 </nav>
            </header>
 
-           <section id="Catchphrase">
+           <section id="Catchphrase"> <!-- Display a slogan-->
                <h2>Trouvez votre Hébergement pour des vacances de rêve</h2>
                <p>En plein centre ville ou en pleine nature</p>
            </section>
 
            
-               <form method="GET" action="#" >
-                    <div id="Bloc_Search">
+               <form method="GET" action="#" > <!--Display a search form-->
+                    
                         <div id="Searchbar">
-                            <button type="button" id="SP_1"><i class="fas fa-map-marker-alt" ></i></button>
-                            <input type="text" name="Search" id="Search" placeholder="Paris, Marseille..."/>
-                            <input type="submit" id="Click_Search" value="Rechercher">
-                                <div id="Searchpinbox">
+                            <button type="button" id="SP_1"><i class="fas fa-map-marker-alt" ></i></button> <!-- doesn't work but in the future, it could open a map to pin manually-->
+                            <input type="text" name="Search" id="Search" placeholder="Paris, Marseille..."/> <!-- The User can type here -->
+                            
+                            <input type="submit" id="Click_Search" value="Rechercher"> <!--Only Display on screen wider than 768px-->
+
+                            <div id="Searchpinbox"> <!--Only Display on screen narrower than 768px-->
                                     <button type="submit" id="Click_Search2">
                                         <i class="fas fa-search"></i>
                                     </button>
+                            </div>
+                        </div>
+                    
+                        <div id="Filters_bar"> <!-- Filters aren't working actually but they exist visually-->
+                            <p id="FP_box">Filtres</p>
+                                <div id="Filters">
+                                    <button type="button" class="F_box">                       
+                                        <span class="Ficon"><i class="fas fa-money-bill-wave "></i></span> <span class="F_Text">Économique</span>
+                                    </button>
+                                    <button type="button" class="F_box">
+                                        <span class="Ficon"><i class="fas fa-child"></i></span> <span class="F_Text">Familial</span>
+                                    </button>
+                                    <button type="button" class="F_box">
+                                        <span class="Ficon"><i class="fas fa-heart"></i></span> <span class="F_Text">Romantique</span>
+                                    </button>
+                                    <button type="button" class="F_box">
+                                        <span class="Ficon"><i class="fas fa-dog"></i></span> <span class="F_Text">Animaux autorisés</span>
+                                    </button>
                                 </div>
                         </div>
-                    </div>
-                    <div id="Filters_bar">
-                        <p id="FP_box">Filtres</p>
-                        <div id="Filters">
-                            <button type="button" class="F_box">                       
-                                <span class="Ficon"><i class="fas fa-money-bill-wave "></i></span> <span class="F_Text">Économique</span>
-                            </button>
-                            <button type="button" class="F_box">
-                                <span class="Ficon"><i class="fas fa-child"></i></span> <span class="F_Text">Familial</span>
-                            </button>
-                            <button type="button" class="F_box">
-                                
-                                <span class="Ficon"><i class="fas fa-heart"></i></span> <span class="F_Text">Romantique</span>
-                                
-                            </button>
-                            <button type="button" class="F_box">
-                                
-                                <span class="Ficon"><i class="fas fa-dog"></i></span> <span class="F_Text">Animaux autorisés</span>
-                                
-                            </button>
-                        </div>
-                    </div>
                 </form>
-                <footer id="H_Footer">
+                <footer id="H_Footer"> <!--Display stats about the numbers of hotels in the area the users search from-->
                     <div id="H_Footer_IconFrame">
                         <i class="fas fa-info" id="H_footer_icon"></i>
                     </div>
@@ -78,13 +76,13 @@
             </div>
     
 
-       <div id="corpus">
-           <article id="inn_n_popular">
-               <div id="inn">
+        <div id="corpus"> <!-- Corpus is where you can find activities and an hotel, it's divided in Two sections "Inn_n_Popular" and "Activity"-->
+            <article id="inn_n_popular"> <!-- First section, also divided in two-->
+                <div id="inn"> <!--Inn contains a title, the "board" which contains "Frames" which contains everything the user need, images, names, notations and prices; at the bottom of inn there's a link for displaying more hotel,it's not working for now-->
                     <header id="H_Inn">
                         <h2>Hébergements à Marseille</h2>
                     </header>       
-                    <div id="Inn_board">
+                    <div id="Inn_board">  <!-- this "Board" with "Frames" is used for nearly everything in the corpus-->
                         <a href="#" class="I_Inn_Frame">
                             <img src="images/hebergements/4_small/Cannebière_4.jpg" alt="Auberge la Cannebière" class="I_Inn">
                            <div class="Inn_Text">
@@ -265,9 +263,9 @@
        </div>
 
     </div> 
-        <footer id="True_Footer">
+        <footer id="True_Footer"> <!-- The bottom of the page-->
             <div id="F_about">
-                <h5>A propos</h5>
+                <h5>À propos</h5>
                 <ul>
                     <li><a href="#">Fonctionnement du Site</a></li>
                     <li><a href="#">Conditions générales de vente</a></li>
