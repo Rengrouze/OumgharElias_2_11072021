@@ -1,12 +1,7 @@
-body
-{
-    height: auto;
-}
+
 #bloc-page
 {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     height: auto;
 }
 #Top
@@ -120,6 +115,8 @@ nav
     flex-wrap: wrap;
     height: auto;
     margin-top: 10px;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 #corpus

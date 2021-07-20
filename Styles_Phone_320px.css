@@ -1,0 +1,42 @@
+
+#bloc-page
+{
+    width: 320px;
+}
+#Searchbar
+{
+    width:90%;
+    margin-left: 21px;
+    margin-right: 21px;
+    height: 51px;
+}
+#Searchbar input
+{
+    height: 51px;
+} 
+#Search
+{
+    width: 188px;
+}
+#SP_1
+{
+    width: 52px;
+    height: 51px;
+}
+.I_Popular_Frame
+{
+    width: 290px;
+    height: 145px;
+}
+.Popular_Text
+{
+    font-size: 0.9em;
+}
+.I_Inn_Frame
+{
+    width: 290px;
+}
+.I_Activity_Frame
+{
+    width: 290px;
+}
