@@ -218,11 +218,11 @@ nav {
   border-radius: 50px;
   margin-left: 2%;
   margin-right: 2%;
+  margin-bottom: 1%;
+  margin-top: 1%;
   background-color: white;
   padding: 0;
   white-space: nowrap;
- 
-  margin-right: 20px;
   font-size: 0.8em;
   font-weight: 600;
   align-items: center;
