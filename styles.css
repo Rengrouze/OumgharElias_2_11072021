@@ -138,10 +138,10 @@ nav {
   width: 100%;
 }
 #Searchbar  /* literally the Search bar */ {
+  margin-top: 2%;
   justify-content: flex-start;
   width: 425px;
   height: 40px;
-  margin-top: 2%;
   display: flex;
   vertical-align: middle;
   border-radius: 10px 10px 10px 10px;
