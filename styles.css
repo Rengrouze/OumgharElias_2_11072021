@@ -141,6 +141,7 @@ nav {
   justify-content: flex-start;
   width: 425px;
   height: 40px;
+  margin-top: 2%;
   display: flex;
   vertical-align: middle;
   border-radius: 10px 10px 10px 10px;
