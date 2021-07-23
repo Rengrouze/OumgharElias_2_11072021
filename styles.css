@@ -267,8 +267,7 @@ nav {
   display: flex;
   border: solid #f2f2f2 2px;
   border-radius: 50px;
-  width: 35px;
-  height: 35px;
+  padding: 5px 11px 5px 11px;
   margin-top: auto;
   margin-bottom: auto;
   justify-content: center;
@@ -333,6 +332,7 @@ nav {
   margin-right: 40px;
 }
 
+/*Frame of the board*/
 .I_Inn_Frame {
   background-color: white;
   width: 246px;
@@ -347,7 +347,7 @@ nav {
 .I_Inn_Frame:hover {
   border: solid 2px #0065fc;
 }
-
+/* image in the frame */
 .I_Inn {
   border-radius: 10px 10px 0px 0px;
   object-fit: cover;
@@ -357,6 +357,7 @@ nav {
   margin-right: 5px;
   margin-top: 5px;
 }
+/* Text in the frame */
 .Inn_Text p:not(.Inn_note) {
   margin-top: 0%;
   margin-bottom: 0%;
@@ -368,11 +369,12 @@ nav {
   margin-left: 3%;
   margin-right: auto;
 }
+/* Stars in the frame */
 .Inn_note {
   margin-top: 2%;
   margin-left: 3%;
 }
-
+/* "afficher plus*/
 #More {
   margin-left: 5%;
   margin-bottom: 5%;
@@ -382,6 +384,8 @@ nav {
   color: #0065fc;
   text-decoration: underline;
 }
+
+/* second article, same structure than the first one: Board - Frame - Image + text + notes */
 
 #Popular {
   display: flex;
@@ -395,6 +399,14 @@ nav {
   margin-left: 1%;
   height: 100%;
   padding-bottom: 5px;
+}
+#H_Popular {
+  margin-left: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-right: 1%;
+  display: flex;
+  justify-content: space-between;
 }
 #Popular_Board {
   display: flex;
@@ -411,7 +423,6 @@ nav {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  overflow: hidden;
   display: flex;
   box-shadow: 0px 1px 1px 1px #dfdfdf;
   border: solid 2px white;
@@ -421,26 +432,30 @@ nav {
 }
 .I_Popular {
   object-fit: cover;
-  width: 127px;
-  height: 134px;
+  min-width: 127px;
+  max-width: 127px;
+  height: 93%;
   border-radius: 10px 0px 0px 10px;
   margin: 5px;
 }
 
-#H_Popular {
-  margin-left: 2%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  padding-right: 1%;
-  display: flex;
-  justify-content: space-between;
-}
 .Popular_Text {
   text-align: left;
   margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+.Popular_Text h4, p
+{
+  margin:0%;
 }
 
-#activity {
+
+/* Third section */
+#activity 
+{
   width: 1335px;
   height: 502px;
   margin-left: auto;
@@ -454,6 +469,8 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+/* there is multiple frame in the activity board because they're not the same size, there's then, a class for each one and one class for all*/
 .I_Activity_Frame1 {
   width: 302px;
   height: 445px;
@@ -544,6 +561,8 @@ nav {
   margin-left: 5%;
 }
 
+
+/* the bottom of the page */
 #True_Footer {
   width: 100%;
   margin-left: auto;
