@@ -1,7 +1,4 @@
-#bloc-page
-{
-    width: 100%;   
-}
+
 #Searchbar
 {
     width:88%;
@@ -16,12 +13,12 @@
 
 .I_Inn_Frame
 {
-    width: 325px;
+    width: 90%;
     
 }
 .I_Activity_Frame
 {
-    width: 335px;
+    width: 90%;
 }
 #True_Footer
 {
