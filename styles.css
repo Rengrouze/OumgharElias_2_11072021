@@ -263,6 +263,7 @@ nav {
 #H_Footer {
   display: flex;
   height: 50%;
+  align-items: center;
 }
 #H_Footer_IconFrame {
   display: flex;
