@@ -91,19 +91,16 @@ body {
 #Searchpinbox {
   display: none;
 }
-#bloc-page {
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-}
+
 
 /* Head includes the logo, the search bar, the filters and the small paragraph on the number of accommodations */
 #head {
   display: flex;
   flex-direction: column;
   margin-top: 3%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Box of the logo and the navigation*/
@@ -111,6 +108,7 @@ body {
   display: flex;
   justify-content: space-between;
   vertical-align: bottom;
+  
 }
 
 nav {
@@ -289,7 +287,9 @@ nav {
 /* Corpus */
 
 #corpus {
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
   display: flex;
   flex-direction: column;
   height: 1280px;
