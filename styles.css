@@ -122,6 +122,10 @@ nav {
   color: #0065fc;
   font-weight: 600;
 }
+.Signup
+{
+  font-weight: 800;
+}
 .T_box       /* Navigation box*/ {
   padding-top: 3%;
   color: #0065fc;
@@ -134,9 +138,6 @@ nav {
   border-top: solid #0065fc 3px;
 }
 
-#Bloc_Search {
-  width: 100%;
-}
 #Searchbar  /* literally the Search bar */ {
   margin-top: 2%;
   justify-content: flex-start;
