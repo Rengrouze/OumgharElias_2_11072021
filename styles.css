@@ -88,6 +88,8 @@ body {
   margin: 0%;
   width: 100%;
 }
+
+/*the button bellow is only visible in the mobile version*/
 #Searchpinbox {
   display: none;
 }
